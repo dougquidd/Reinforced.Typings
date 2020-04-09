@@ -228,6 +228,17 @@ namespace Reinforced.Typings
             }
         }
 
-        
+        /// <summary>
+        /// Gets or sets whether unresolved types must be exported as 'unknown' instead of 'any'
+        /// </summary>
+        public bool UnresolvedToUnknown
+        {
+            get { return _attr.UnresolvedToUnknown; }
+            set
+            {
+                if (_isLocked) return;
+                _attr.UnresolvedToUnknown = value;
+            }
+        }
     }
 }

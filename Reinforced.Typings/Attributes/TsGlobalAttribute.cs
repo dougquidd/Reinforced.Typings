@@ -93,6 +93,11 @@ namespace Reinforced.Typings.Attributes
         public bool AutoOptionalProperties { get; set; }
 
         /// <summary>
+        /// Gets or sets whether unresolved types must be exported as 'unknown' instead of 'any'
+        /// </summary>
+        public bool UnresolvedToUnknown { get; set; }
+
+        /// <summary>
         /// Default constructor for TsGlobal attribute
         /// </summary>
         public TsGlobalAttribute()
